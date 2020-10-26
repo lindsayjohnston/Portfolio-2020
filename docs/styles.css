@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+/* ROOT VARIABLES WILL GO HERE FOR COLORS */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(48, 47, 47);
+    --primary-color-hover: rgb(62, 125, 202);
+    --secondary-color: black;
+    --light-color: white;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    /* background-color: rgb(43, 41, 41); */
+    color: var(--secondary-color);
+    line-height: 1.6;
+    margin: 0;
+    min-width: 850px
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.project-text a {
+    font-size: 1rem;
+    color: var(--primary-color-hover);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Nav */
+
+nav {
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    ;
+}
+
+nav ul {
+    width: 100%;
+    min-width: 850px;
+    padding: 0px;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    margin-right: 30px;
+    padding: 14px 16px;
+}
+
+a:hover {
+    background-color: var(--primary-color-hover);
+    color: var(--secondary-color);
+}
+
+.container {
+    background-color: var(--light-color);
+}
+
+.section-heading {
+    text-align: center;
+    height: 53px;
+}
+
+/* SHOWCASE */
+
+#showcase-container {
+    margin: auto;
+    padding-top: 53px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#showcase-photo {
+    padding: 53px 10px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+#showcase-words>h2{
+    margin-bottom: 0px;
+}
+#lindsay-photo {
+    /* height: 100%; */
+    width: 400px;
+    height: 400px;
+    background-image: url('lindsay-black-white.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.big-title {
+    font-size: 60px;
+    text-align: center;
+}
+
+#description {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* PROJECTS */
+
+#project-section {
+    padding-top: 53px;
+    /*for navigating with the menu*/
+}
+
+#projects-container {
+    background: url('lines-of-code-2653362.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-title {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+#projects-title>h1 {
+    margin: 0px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project {
+    text-align: center;
+    padding: 30px 0;
+    width: 33%;
+}
+
+.project>a {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background-color: var(--primary-color-hover);
+    color: var(--secondary-color);
+}
+
+.paragraph {
+    background-color: var(--primary-color);
+    opacity: 90%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.project-text {
+    color: var(--light-color);
+    opacity: none;
+    padding: 10px;
+}
+
+/* ABOUT ME */
+
+
+
+#about-section {
+    padding-top: 53px;
+}
+
+#about-me {
+    margin-bottom: 30px;
+}
+
+#about-me>h1 {
+    margin: 0px;
+}
+
+#about-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-row {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-sec-text {
+    text-align: center;
+    width: 350px;
+    height: fit-content;
+    /* margin-right: 60px; */
+}
+
+#about-sec-photo {
+    background: url('bartlett_photo.jpg') no-repeat center/cover;
+    height: 400px;
+    width: 350px;
+}
+
+#about-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-me-link {
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.about-me-link>h2 {
+    margin: 0px;
+}
+
+/* WHAT'S NEXT */
+
+#next {
+    padding-top: 40px;
+}
+
+#next-container {
+    background: url('ballpen-blur-close-up-computer-461077.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#next-title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.next-sec {
+    text-align: center;
+    width: 30%;
+    margin: 40px 5px;
+}
+
+#next-container {
+    min-width: 950px;
+}
+
+#next-container h3 {
+    background-color: var(--primary-color);
+    margin: 10px 55px;
+    padding: 5px, 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: var(--light-color);
+}
+
+/* CONTACT */
+
+#contact-section {
+    padding-top: 53px;
+}
+
+#contact-title>h1 {
+    margin: 0px;
+}
+
+#contact-container {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+#contact-sec-2>h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+}
+
+/* FOOTER */
+
+#footer p {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    margin: 0px 0px;
+    /* height: 60px; */
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width:800px) {
+    body {
+        min-width: 0px;
+    }
+    .container {
+        width: 100%;
+    }
+
+    nav li a{
+        margin-right: 5px;
+    }
+    #showcase-container {
+        flex-direction: column;
+    }
+
+    #lindsay-photo{
+       height: 300px;
+       width: 300px; 
+    }
+
+    .big-title{
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    #projects{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 90%;
+        padding-bottom: 0px;
+    }
+
+    #about-row{
+        width: 750px;
+    }
+    #about-links{
+        margin: 5px 0px;
+    }
+    #about-sec-text{
+        width: 40%;
+        height: fit-content;
+        margin-left: 10px;
+    }
+
+    #about-sec-photo{
+        width: 40%;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    .hide-on-small{
+        display: none;
+    }
+
+    nav ul{
+        min-width: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+    .container {
+        width: 100%;
+    }
+    #showcase-container {
+        flex-direction: column;
+    }
+
+    #lindsay-photo{
+       height: 300px;
+       width: 300px; 
+    }
+
+    .big-title{
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    #description{
+        margin-bottom: 0px;
+    }
+
+    #project-section{
+        padding-top: 53px;
+    }
+    #projects{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 90%;
+        padding-bottom: 0px;
+    }
+
+    #about-me{
+        margin-bottom: 15px;
+    }
+
+    #about-row{
+        width: 100%;
+        flex-direction: column-reverse;
+
+    }
+
+    #about-sec-text{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+
+    #about-sec-text>p{
+        margin: 0px 10px;
+
+    }
+
+    #about-sec-photo{
+        width: 70%;
+        height: 33vh;
+        margin: auto;
+    }
+
+}
